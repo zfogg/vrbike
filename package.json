@@ -11,6 +11,7 @@
   "dependencies": {
     "coffee-script": "^1.7.1",
     "introspect": "0.0.3",
+    "printf": "^0.2.0",
     "serialport": "^1.4.2",
     "socket.io": "^1.0.6"
   }
