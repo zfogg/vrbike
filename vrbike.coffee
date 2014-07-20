@@ -10,7 +10,7 @@ serialPort = do ->
 
 io = (require "socket.io") 9600
 
-movingAverage = new (require "./movingAverage") 70
+movingAverage = new (require "./movingAverage") 55
 
 printf = require "printf"
 

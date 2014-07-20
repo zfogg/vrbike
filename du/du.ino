@@ -1,6 +1,7 @@
 
 int pin = 13;
 int val = 0;
+int inc = 3;
 
 
 void setup() {
@@ -13,24 +14,15 @@ bool sent = false;
 
 void loop() {
   val = digitalRead(pin);
-  
   if (val == HIGH && sent == false) {
     sent = true;
-    Serial.print(true);
+    Serial.print(inc);
   } else if (val == LOW) {
     sent = false;
+    Serial.print(false);
+  } else {
+    Serial.print(false);
   }
+  delay(35);
 }
 
-
-int steps = 10;
-
-void resetMean() {
-}
-
-//exports.Mean.prototype.push = function (x) {
-//  var i = ++ this.length;
-//  var m = this.mean || 0;
-//  this.mean = m - m / i + x / i;
-//  return this.mean;
-//};
